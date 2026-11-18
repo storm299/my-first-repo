@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 1000000
+#define N 50000000
 int main(void)
 {
     long long inside = 0;
@@ -10,6 +10,6 @@ int main(void)
         if (x * x + y * y <= 1.0)
             inside++;
     }
-    printf("N = %lld, pi ≈ %f\n", N, 4.0 * inside / N);
+    printf("N = %lld, 估算 pi = %f\n", N, 4.0 * inside / N);
     return 0;
 }
